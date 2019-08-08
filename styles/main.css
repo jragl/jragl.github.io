@@ -5,7 +5,7 @@ body {
 header {
   background: url(../images/Hero-Shot.png) center / cover;
   height: 60vh;
-  justify-content: center;
+  justify-content: center !important;
   text-align: center;
 }
 
