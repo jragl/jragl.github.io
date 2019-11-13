@@ -1,102 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="mdl-js">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Portfolio | Jeff Ragland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"> </script>
-
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
   </head>
-
   <body>
-      <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Jeff Ragland</h1>
-      <p class="slogan">UX Designer and highly seasoned Veteran from the Texas Hill Country.</p>
+
+      <header>
+        <ul class="navbar">
+          <li><a href="index.html">UX Case Studies</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="mailto:jragl@mac.com">Contact Me</a></li>
+        </ul>
+        <div class="hamburger">
+<!-- I need some help with how to create an overlay with my hamburger -->
+          <a href="menu">
+            <img src="images/menuHamburger.png" alt="Menu">
+          </a>
+        </div>
+        <div class="logo-and-type">
+          <img src="images/jr-logo-white.svg" alt="Jeff Ragland's Logo">
+            <h1>JEFF RAGLAND</h1>
+            <p class="slogan">UX designer & seasoned vet from Texas</p>
+        </div>
     </header>
 
-      <main class="mdl-layout__content mdl-grid">
+    <div class="currentPage">
+      <h5>Case Studies</h5>
+    </div>
 
-        <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-          </div>
-
-          <div class="mdl-cell mdl-cell--7-col">
-              <h2 class="mdl-card__title-text">Featured Project Name</h2>
-              <p class="project-description mdl-card__supporting-text">Project description text</p>
-          </div>
-        </div>
-
-       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
-         </div>
-
-         <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-3/" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
-         </div>
-
-         <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-           <div>
-             <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-           </div>
-           <div class="mdl-card__title">
-             <h2 class="mdl-card__title-text">Project Name</h2>
-           </div>
-           <div class="mdl-card__supporting-text">Project description text</div>
+    <section class="container">
+      <div class="featuredProject">
+        <a href="caseStudyBusyBus.html">
+        <img src="images/busyBusScreenShot.png" alt="Featured Project - BusyBus">
+        <h2>Featured Case Study - BusyBus</h2>
+        <p>A mobile app focused on using public transportation in a major city. The major problem needing to be solved was identifying the next arriving bus and how much time a rider had to get there. Riders were complaining most about the Washington & State bus stop.</p>
+        </a>
       </div>
-    </main>
+      <div class="allProjects">
+          <div class="project 1">
+            <a href="caseStudyBusyBus.html">
+            <img src="images/projectBusyBus.png" alt="Project 1 - BusyBus">
+            <h2>BusyBus</h2>
+            <p>A mobile app focused on using public transportation in a major city.</p>
+            </a>
+          </div>
+          <div class="project 2">
+            <a href="caseStudyCumulus.html">
+            <img src="images/projectCumulus.png" alt="Project 2 - Cumulus">
+            <h2>Cumulus</h2>
+            <p>A desktop and mobile app for a fictitious cloud storage service.</p>
+            </a>
+          </div>
+          <div class="project 3">
+            <a href="caseStudyComingSoon.html">
+            <img src="images/projectComingSoon.png" alt="Project 3 - Coming Soon!">
+            <h2>Coming Soon!</h2>
+            <p>Coming Soon!</p>
+            </a>
+          </div>
+      </div>
+    </section>
 
-    <footer class="mdl-mini-footer">
-          <ul class="mdl-mini-footer__link-list">
+    <footer>
+      <ul class="icons" style="list-style-type:none;">
               <li>
-                 <a href="https://www.linkedin.com/in/jeff-ragland/">
-                   <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  <a href="https://www.linkedin.com/in/jeff-ragland/">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                  </a>
               </li>
-
               <li>
-                 <a href="https://github.com/jragl">
-                   <i class="fa fa-github-square" aria-hidden="true"></i>
-                 </a>
+                  <a href="https://www.facebook.com/profile.php?id=100008267680152">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  </a>
               </li>
-
               <li>
-                 <a href="https://www.facebook.com/profile.php?id=100008267680152">
-                   <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                 </a>
+                  <a href="https://twitter.com/jragl">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </a>
               </li>
-
               <li>
-                 <a href="https://twitter.com/jragl">
-                   <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                 </a>
+                  <a href="https://github.com/jragl">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                  </a>
               </li>
-
               <li>
-                 <a href="mailto:jragl@mac.com">
-                   <i class="fa fa-envelope-square" aria-hidden="true"></i>
-                 </a>
+                  <a href="mailto:jragl@mac.com">
+                    <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                  </a>
               </li>
       </ul>
     </footer>

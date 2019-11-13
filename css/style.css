@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.aboutMe {
+  border: .25px solid #E5E5E5;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.aboutMe:hover {
+  box-shadow: 0 5px 6px 0 #E5E5E5;
+}
+
+.backToTop {
+  left: 0;
+  top: 0;
+  /* left: 0; */
+  position: sticky;
+  position: -webkit-sticky;
+  width: 100%;
+}
+
+.backToTop:hover {
+  /* background-color: #E5E5E5; */
+  color: #C0D4F5;
+}
+
+/* .backToTop img {
+  display: left;
+} */
+
+body {
+font-family: 'Century Gothic', 'Futura', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px;
+}
+
+.currentPage {
+  background-color: #C0D4F5;
+  height: 44px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.discoveryAndResearch1 img {
+  display: flex;
+  height: auto;
+  width: 90%;
+}
+
+.featuredProject {
+  border: .25px solid #E5E5E5;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.featuredProject:hover {
+  box-shadow: 0 5px 6px 0 #E5E5E5;
+}
+
+footer {
+  display: none;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  color: #9AB6EA;
+  font-size: 2rem;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  /* margin: 10px; */
+  text-align: center;
+}
+
+h5 {
+  color: #385FA3;
+  font-size: 18px;
+  line-height: 2.3;
+  text-align: center;
+}
+
+.hamburger{
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+header {
+  background-image: url(../images/heroiPhone.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  justify-content: center;
+}
+
+html {
+  font-size: 10px;
+  color: black;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.informationArchitecture2 img {
+  height: auto;
+  width: 85%;
+}
+
+.logo-and-type {
+  color: white;
+  height: 100%;
+  padding: 2.5%;
+  text-align: center;
+}
+
+.logo-and-type img{
+  height: 50px;
+  width: 50px;
+}
+
+.navbar {
+  display: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.project {
+  border: .25px solid #E5E5E5;
+  margin-bottom: 20px;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.project:hover {
+  box-shadow: 0 5px 6px 0 #E5E5E5;
+}
+
+.projectDetails {
+  border: .25px solid #E5E5E5;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 89%
+}
+
+.projectDetails:hover {
+  box-shadow: 0 5px 6px 0 #E5E5E5;
+}
+
+.projectDetails img {
+  max-height: 325px;
+}
+.visualDesign {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.visualVersions {
+  display: inline-block;
+  margin-left: 110px;
+  margin-right:95px;
+}
+
+
+
+/* ------------Desktop Screen Size------------ */
+@media screen and (min-width: 750px) {
+  .aboutMe {
+    margin-bottom: 50px;
+    max-width: 878px;
+    padding: 50px;
+  }
+
+  .aboutMe h2 {
+    text-align: left;
+  }
+
+  .aboutMe img {
+    float: left;
+    padding-right: 50px;
+    width: 33%;
+  }
+
+  .aboutMe p {
+    text-align: left;
+  }
+
+  .aboutMeText {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .allProjects {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    min-width: 878px;
+  }
+
+  .container {
+    padding: 50px;
+    margin-bottom: 0;
+  }
+
+  .discoveryAndResearch1 img {
+    max-width: 66%;
+  }
+
+  .fa {
+    color: rgba(255,255,255,.5);
+  }
+
+  .featuredProject {
+    margin-bottom: 50px;
+    max-width: 878px;
+    padding: 50px;
+  }
+
+  .featuredProject img {
+    float: left;
+    padding-right: 50px;
+  }
+
+  .featuredProject h2  {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .featuredProject p {
+    text-align: left;
+  }
+
+  footer {
+    bottom: 0;
+    background-color: #C0D4F5;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    width: 100%;
+  }
+
+  footer .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    background-image: url(../images/heroDesktop.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    display: block;
+    height: 300px;
+    justify-content: center;
+  }
+
+  .icons li {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+  }
+
+  .icons li a {
+    font-size: 3rem;
+    justify-content: space-between;
+    line-height: 1.5;
+  }
+
+  .informationArchitecture2 img {
+    height: 218px;
+    width: 400px;
+  }
+
+  .logo-and-type img{
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+  }
+
+  .navbar {
+    background-color: none;
+    display: block;
+    padding: 5px;
+    min-width: 25%;
+  }
+
+  .navbar li {
+    border-right: 1px solid white;
+    float: left;
+  }
+
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .navbar li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar li a:hover {
+    color: #C0D4F5;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .project {
+    justify-content: space-around;
+    max-width: 250px;
+  }
+
+  .project img {
+    max-width: 90%;
+  }
+
+  .projectDetails {
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 89%;
+    padding: 50px;
+  }
+
+  /* .projectDetails img {
+    max-height: 318px;
+  } */
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* position: fixed; */
+    width: 100%;
+  }
+
+  .visualVersions {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
