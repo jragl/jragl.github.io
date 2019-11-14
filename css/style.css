@@ -37,7 +37,7 @@ a {
 
 body {
   /* display: flex; */
-  font-family: 'Century Gothic', 'Futura', sans-serif;
+  font-family: 'Roboto', 'Century Gothic', 'Futura', sans-serif;
 }
 
 .container {
@@ -199,7 +199,7 @@ img {
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus, .overlay a:active {
   /* color: #f1f1f1; */
   background-color: #9AB6EA;
 }
@@ -240,9 +240,10 @@ p {
   display: flex;
   flex-direction: column;
   height: auto;
+  justify-content: center;
   margin-bottom: 20px;
   padding: 20px;
-  width: 89%
+  max-width: 100%
 }
 
 .projectDetails:hover {
@@ -261,9 +262,10 @@ p {
 }
 
 .visualVersions {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  min-width: 90%;
+  min-width: 275px;
 }
 
 .w3-button:hover {
@@ -273,17 +275,19 @@ p {
 
 .w3-display-left {
   height: 30px;
-  max-width:20px; /* padding-top:56%; */
+  margin-left: 20px;
+  width:10%;
 }
 
 .w3-display-right {
   align-items: right;
   height: 30px;
-  max-width: 20px;
+  margin-right: 20px;
+  width: 10%;
 }
 
 
-/* ------------Desktop Screen Size------------ */
+/* ----------------------Desktop Screen Size---------------------- */
 @media screen and (min-width: 750px) {
   .aboutMe {
     margin-bottom: 50px;
@@ -323,16 +327,17 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 50px;
     margin-bottom: 0;
   }
 
   .container h2 {
-    display: table;
-    text-align: left;
+    text-align: center;
   }
   .discoveryAndResearch1 img {
-    max-width: 66%;
+    min-width: 50%;
+    max-height: 100%
   }
 
   .fa {
@@ -352,7 +357,7 @@ body {
 
   .featuredProject h2  {
     display: inline-block;
-    text-align: left;
+    text-align: center;
   }
 
   .featuredProject p {
@@ -452,9 +457,8 @@ body {
   }
 
   .projectDetails {
-    justify-content: space-around;
     margin-bottom: 50px;
-    width: 89%;
+    max-width: 100%;
     padding: 50px;
   }
 
