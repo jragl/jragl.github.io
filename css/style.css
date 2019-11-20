@@ -262,6 +262,7 @@ p {
 
 .projectDetails img {
   max-height: 325px;
+  max-width: 90%;
 }
 .visualDesign {
   align-items: center;
