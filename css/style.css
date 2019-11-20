@@ -264,39 +264,60 @@ p {
   max-height: 325px;
   max-width: 90%;
 }
-.visualDesign {
-  align-items: center;
-  display: flex;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
 
-.visualVersions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 275px;
-}
+/* ----- Image Carousel Code ----- */
+        .visualDesign {
+          align-items: center;
+          display: flex;
+          overflow-x: hidden;
+          overflow-y: hidden;
+          white-space: nowrap;
+          min-width: 80%;
+        }
 
-.w3-button:hover {
-  background-color: #9AB6EA;
-  color: #385FA3;
-}
+        .visualVersions {
+          align-items: center;
+          display: block;
+          flex-direction: column;
+          justify-content: center;
+          min-width: 80%;
+        }
 
-.w3-display-left {
-  height: 30px;
-  margin-left: 20px;
-  width:10%;
-}
+        .w3-button:hover {
+          background-color: #9AB6EA;
+          color: #385FA3;
+        }
 
-.w3-display-right {
-  align-items: right;
-  height: 30px;
-  margin-right: 20px;
-  width: 10%;
-}
+        .w3-display-left {
+          height: 45px;
+          margin-left: 20px;
+          width:45px;
+        }
 
+        .w3-display-right {
+          align-items: right;
+          height: 45px;
+          margin-right: 20px;
+          width: 45px;
+        }
+
+/* -- Carousel dots -- */
+        .visualVersionsDots {
+          align-items: center;
+          background-color: #bbb;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          height: 15px;
+          justify-content: center;
+          margin: 0 2px;
+          transition: background-color 0.6s ease;
+          width: 15px;
+        }
+
+        .active, .visualVersionsDots:hover {
+          background-color: #385FA3;
+        }
 
 /* ----------------------Desktop Screen Size---------------------- */
 @media screen and (min-width: 750px) {
@@ -458,7 +479,7 @@ p {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .project {
@@ -476,20 +497,18 @@ p {
     padding: 50px;
   }
 
-  /* .projectDetails img {
-    max-height: 318px;
-  } */
-
   ul {
     list-style-type: none;
     overflow: hidden;
-    /* position: fixed; */
     width: 100%;
   }
 
   .visualVersions {
+    align-items: center;
     display: block;
+    height: auto;
     margin-bottom: 50px;
+    width: 100%;
   }
 }
 
