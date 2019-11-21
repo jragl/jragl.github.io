@@ -56,6 +56,13 @@ body {
   width: 100%;
 }
 
+.currentPage .arrow-left {
+  margin: 0 auto;
+  padding: 10px 0 15px 15px;
+  position: fixed;
+  width: 45px;
+}
+
 .cumulusLink img:hover {
   background-color: #C0D4F5;
   margin: 20px;
