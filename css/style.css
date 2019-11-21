@@ -160,6 +160,15 @@ img {
   width: 85%;
 }
 
+.projectDetails >.iPhoneHome {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-width: 90%;
+  margin: 50px;
+}
+
 .logo-and-type {
   color: white;
   height: 100%;
