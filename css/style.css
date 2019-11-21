@@ -165,7 +165,7 @@ img {
   display: flex;
   height: auto;
   justify-content: center;
-  min-width: 90%;
+  /* min-width: 90%; */
   margin: 50px;
 }
 
