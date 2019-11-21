@@ -163,9 +163,8 @@ img {
 .projectDetails >.iPhoneHome {
   align-items: center;
   display: flex;
-  height: auto;
+  max-height: 4500px;
   justify-content: center;
-  /* min-width: 90%; */
   margin: 50px;
 }
 
