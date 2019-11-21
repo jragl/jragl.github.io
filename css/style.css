@@ -56,6 +56,12 @@ body {
   width: 100%;
 }
 
+.cumulusLink img:hover {
+  background-color: #C0D4F5;
+  margin: 20px;
+  transform: scale(1.5);
+  /* background-color: #C0D4F5; */
+}
 .discoveryAndResearch1 img {
   display: flex;
   height: auto;
