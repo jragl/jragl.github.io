@@ -17,6 +17,10 @@ a {
   box-shadow: 0 5px 6px 0 #E5E5E5;
 }
 
+.arrow-left .fa-inverse {
+  color: #385FA3;
+}
+
 .backToTop {
   display: flex;
   left: 0;
@@ -51,16 +55,27 @@ body {
 
 .currentPage {
   background-color: #C0D4F5;
-  height: 44px;
-  margin-bottom: 20px;
-  width: 100%;
+  display: flex;
+  /* height: 45px; */
+  /* justify-content: center; */
+  /* margin-bottom: 20px;
+  width: 100%; */
 }
 
 .currentPage .arrow-left {
-  margin: 0 auto;
+  align-self: flex-start; /*added this property*/
+  height: 45px;
+  margin: auto; /*changed this property*/
   padding: 10px 0 15px 15px;
-  position: fixed;
+  /* position: fixed; */
   width: 45px;
+}
+
+.currentPage h5 {
+  display: flex;
+  justify-content: center;
+  margin-left: -45px;
+  width: 100%;
 }
 
 .cumulusLink img:hover {
@@ -292,7 +307,6 @@ p {
           display: flex;
           overflow-x: hidden;
           overflow-y: hidden;
-          min-width: 80%;
         }
 
         .visualVersions {
@@ -300,7 +314,7 @@ p {
           display: block;
           flex-direction: column;
           justify-content: center;
-          min-width: 80%;
+          width: 100%;
         }
 
         .w3-button:hover {
@@ -311,8 +325,8 @@ p {
         .w3-display-left {
           font-size: 18px;
           height: 45px;
-          justify-content: center;
-          margin: 20px auto;
+          justify-content: flex-start;
+          margin-left: 25px;
           width:45px;
         }
 
@@ -320,7 +334,8 @@ p {
           align-items: right;
           font-size: 18px;
           height: 45px;
-          margin: 0 auto;
+          justify-content: flex-end;
+          margin-right: 25px;
           width: 45px;
         }
 
@@ -339,9 +354,9 @@ p {
           width: 15px;
         }
 
-        .visualVersionsDots:active {
+        /* .visualVersionsDots:active {
           background-color: red;
-        }
+        } */
 
         .visualVersionsDots:hover {
           background-color: #385FA3;
@@ -541,6 +556,7 @@ p {
 
   .visualDesign {
     white-space: nowrap;
+    width: 100%;
   }
 
   .visualVersions {

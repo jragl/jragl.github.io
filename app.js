@@ -1,7 +1,5 @@
 var slideIndex = 1;
 showDivs(slideIndex);
-showSlides(slideIndex);
-
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -11,11 +9,13 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("visualVersions");
   if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+  if (n < 1) {slideIndex = x.length};
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
+    // visualVersionsDots[i].className = visualVersionsDots[i].className.replace(" active", "");
   }
   x[slideIndex-1].style.display = "block";
+  // visualVersionsDots[slideIndex-1].className += " active";
 }
 
 /* Open when someone clicks on the span element */
@@ -29,31 +29,3 @@ function closeNav() {
 }
 
 // ---------- Carousel navigation dots ---------- //
-// showSlides(slideIndex);
-
-// remarked out
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-//
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-// end remarked out
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("visualVersionsDots");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dot[i].className = dot[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
