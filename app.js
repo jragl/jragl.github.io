@@ -28,4 +28,7 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+$('.cumulusiPhoneFrame1').scroll(function() {
+    $('#scroll-text').fadeOut();
+});
 // ---------- Carousel navigation dots ---------- //

@@ -79,14 +79,110 @@ body {
 }
 
 .cumulusLink img:hover {
-  background-color: #C0D4F5;
+  background-color: #e5e5e5;
+  border: 1px solid #0066ff;
+  border-radius: 25px;
   margin: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
   transform: scale(1.5);
+  transition: all ease 0.2s;
   /* background-color: #C0D4F5; */
 }
+
+/*---------- code for image inside of iPhone & Desktop Frames ----------*/
+
+          .cumulusDesktopDashboard {
+            /* border-radius: 5px 0 0 5px; */
+            border-style: none;
+            height: auto;
+            vertical-align: middle;
+            width: 100%;
+            z-index: -1;
+          }
+
+          #cumulusDesktopFrame1 {
+            border: solid 25px #e8e8e8;
+          	border-top-width: 45px;
+          	border-radius: 50px;
+          	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            margin-bottom: 25px;
+            max-height: 800px;
+            overflow-y: scroll;
+          }
+
+          #cumulusDesktopFrame2 {
+            border: solid 25px #e8e8e8;
+          	border-top-width: 45px;
+          	border-radius: 50px;
+          	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            margin-bottom: 25px;
+            max-height: 800px;
+            overflow-y: scroll;
+          }
+
+          .cumulusDesktopHome {
+            /* border-radius: 5px 0 0 5px; */
+            border-style: none;
+            height: auto;
+            vertical-align: middle;
+            width: 100%;
+            z-index: -1;
+          }
+
+          #cumulusiPhoneFrame1 {
+            border-radius: 25px;
+            border: solid 15px #404040;
+            box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            margin-bottom: 25px;
+            max-height: 800px;
+            overflow-y: scroll;
+          }
+
+          #cumulusiPhoneFrame2 {
+            border-radius: 25px;
+            border: solid 15px #404040;
+            box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            margin-bottom: 25px;
+            max-height: 800px;
+            overflow-y: scroll;
+          }
+
+          .cumulusiPhoneHome {
+            border-radius: 15px 0 0 15px;
+            border-style: none;
+            height: auto;
+            vertical-align: middle;
+            width: 100%;
+            z-index: -1;
+          }
+
+          .cumulusProjectDetailsDesktop {
+            transform: none;
+            transition: all ease 0.4s;
+          }
+          .cumulusProjectDetailsiPhone {
+            transform: none;
+            transition: all ease 0.4s;
+          }
+
+          .mockup ::-webkit-scrollbar {
+          	display: none;
+            /* width: 0; */
+          }
+
+/* ---------- end iphone and desktop frame coding ---------- */
+
 .discoveryAndResearch1 img {
   display: flex;
   height: auto;
+  max-width: 75%;
+  max-height: 100%;
+}
+
+.discoveryAndResearch3 img {
+  max-height: 325px;
+  max-width: 90%;
 }
 
 .featuredProject {
@@ -131,7 +227,6 @@ h3 {
 
 h4 {
   font-size: 1.75rem;
-  /* font-weight: bold; */
   margin: 10px;
   text-align: center;
 }
@@ -186,14 +281,6 @@ img {
 .informationArchitecture2 img {
   height: auto;
   width: 85%;
-}
-
-.projectDetails >.iPhoneHome {
-  align-items: center;
-  display: flex;
-  max-height: 4500px;
-  justify-content: center;
-  margin: 50px;
 }
 
 .logo-and-type {
@@ -266,6 +353,7 @@ img {
 p {
   font-size: 16px;
   line-height: 1.5;
+  max-width: 500px
   text-align: center;
 }
 
@@ -296,10 +384,10 @@ p {
   box-shadow: 0 5px 6px 0 #E5E5E5;
 }
 
-.projectDetails img {
+/* .projectDetails img {
   max-height: 325px;
   max-width: 90%;
-}
+} */
 
 /* ----- Image Carousel Code ----- */
         .visualDesign {
@@ -422,8 +510,8 @@ p {
     text-align: center;
   }
   .discoveryAndResearch1 img {
-    min-width: 50%;
-    max-height: 100%
+    max-width: 80%;
+    /* max-height: 100%; */
   }
 
   .fa {
