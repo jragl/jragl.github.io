@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+.aboutTheProject img {
+  height: 400px;
+}
+
 .aboutMe {
   border: .25px solid #E5E5E5;
   min-width: 80%%;
@@ -78,16 +82,20 @@ body {
   width: 100%;
 }
 
+.cumulusLink img {
+  height: auto;
+  min-width: 400px;
+}
+
 .cumulusLink img:hover {
-  background-color: #e5e5e5;
-  border: 1px solid #0066ff;
+  background-color: #ffffff;
   border-radius: 25px;
+  box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
   margin: 20px;
   margin-bottom: 40px;
   padding: 10px;
   transform: scale(1.5);
   transition: all ease 0.2s;
-  /* background-color: #C0D4F5; */
 }
 
 /*---------- code for image inside of iPhone & Desktop Frames ----------*/
@@ -103,21 +111,21 @@ body {
 
           #cumulusDesktopFrame1 {
             border: solid 25px #e8e8e8;
-          	border-top-width: 45px;
+          	border-top-width: 35px;
           	border-radius: 50px;
           	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
             margin-bottom: 25px;
-            max-height: 800px;
+            width: 300px;
             overflow-y: scroll;
           }
 
           #cumulusDesktopFrame2 {
             border: solid 25px #e8e8e8;
-          	border-top-width: 45px;
+          	border-top-width: 35px;
           	border-radius: 50px;
           	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
             margin-bottom: 25px;
-            max-height: 800px;
+            width: 300px;
             overflow-y: scroll;
           }
 
@@ -177,12 +185,11 @@ body {
   display: flex;
   height: auto;
   max-width: 75%;
-  max-height: 100%;
+  /* max-height: 100%; */
 }
 
 .discoveryAndResearch3 img {
   max-height: 325px;
-  max-width: 90%;
 }
 
 .featuredProject {
@@ -211,6 +218,7 @@ h2 {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
+  margin-top: 1rem;
   text-align: center;
   text-decoration: none;
 }
@@ -278,9 +286,20 @@ img {
   margin: auto;
 }
 
+.informationArchitecture1 img {
+  height: auto;
+  width: 55%;
+}
+
 .informationArchitecture2 img {
+  border: solid 1px black;
   height: auto;
   width: 85%;
+}
+
+.informationArchitecture4 img {
+  height: auto;
+  max-width: 85%;
 }
 
 .logo-and-type {
@@ -352,7 +371,9 @@ img {
 
 p {
   font-size: 16px;
+  font-weight: lighter;
   line-height: 1.5;
+  margin: 2rem 0;
   max-width: 500px
   text-align: center;
 }
@@ -403,6 +424,10 @@ p {
           flex-direction: column;
           justify-content: center;
           width: 100%;
+        }
+
+        .visualVersions img {
+          height: 400px;
         }
 
         .w3-button:hover {
@@ -459,7 +484,7 @@ p {
 
 
 /* ----------------------Desktop Screen Size---------------------- */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 668px) {
   .aboutMe {
     margin-bottom: 50px;
     min-width: 90%;
@@ -509,9 +534,29 @@ p {
   .container h2 {
     text-align: center;
   }
+
+  #cumulusDesktopFrame1 {
+    height: 40vw;
+    width: 60vw;
+  }
+
+  #cumulusDesktopFrame2 {
+    height: 40vw;
+    width: 60vw;
+  }
+
+  .cumulusLink img {
+    min-width: 450px;
+    width: 75%;
+  }
+
   .discoveryAndResearch1 img {
-    max-width: 80%;
+    max-width: 50%;
     /* max-height: 100%; */
+  }
+
+  .discoveryAndResearch3 img {
+    max-height: 500px;
   }
 
   .fa {
@@ -579,9 +624,28 @@ p {
     line-height: 1.5;
   }
 
+  .informationArchitecture1 img {
+    height: auto;
+    min-width: 250px;
+    width: 25%;
+  }
+
   .informationArchitecture2 img {
-    height: 218px;
-    width: 400px;
+    border: solid 1px black;
+    min-width: 550px;
+    width: 60%;
+  }
+
+  .informationArchitecture3 img {
+    height: auto;
+    min-width: 500px;
+    width: 60%
+  }
+
+  .informationArchitecture4 img {
+    height: auto;
+    min-width: 400px;
+    width: 45%
   }
 
   .logo-and-type img{
@@ -619,6 +683,7 @@ p {
 
   p {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .project {
@@ -654,6 +719,11 @@ p {
     margin-bottom: 50px;
     width: 100%;
   }
+
+  .visualVersions img {
+    height: 500px;
+  }
+
 }
 
 
