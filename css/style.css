@@ -510,6 +510,10 @@ p {
     width: 50%;
   }
 
+  .aboutTheProjectPetApp {
+    width: 33%;
+  }
+
   .allProjects {
     display: flex;
     justify-content: center;
