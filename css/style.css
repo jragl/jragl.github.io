@@ -114,8 +114,9 @@ body {
           	border-top-width: 35px;
           	border-radius: 50px;
           	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            height: 40vw;
             margin-bottom: 25px;
-            width: 300px;
+            width: 60vw;
             overflow-y: scroll;
           }
 
@@ -124,8 +125,9 @@ body {
           	border-top-width: 35px;
           	border-radius: 50px;
           	box-shadow: 3px 12px 30px -8px rgba(0,0,0,0.4);
+            height: 40vw;
             margin-bottom: 25px;
-            width: 300px;
+            width: 60vw;
             overflow-y: scroll;
           }
 
