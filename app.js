@@ -31,4 +31,12 @@ function closeNav() {
 $('.cumulusiPhoneFrame1').scroll(function() {
     $('#scroll-text').fadeOut();
 });
+
+function hover(element) {
+  element.setAttribute('src', 'https://jeffragland.design/images/cumulus/cumulusLogoWhite.svg');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'https://jeffragland.design/images/cumulus/cumulusLogoBlue.svg');
+}
 // ---------- Carousel navigation dots ---------- //
