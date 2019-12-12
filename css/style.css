@@ -217,6 +217,12 @@ body {
   box-shadow: var(--main-box-shadow);
 }
 
+.featuredProject img {
+  /* margin-bottom: 20px; */
+  height: 80vw;
+  padding: 50px;
+}
+
 footer {
   display: none;
 }
@@ -621,8 +627,9 @@ p {
   .featuredProject img {
     float: left;
     margin-bottom: 20px;
+    height: 50vw;
+    min-height: 500px;
     padding: 50px;
-    height: 800px;
   }
 
   .featuredProject h2  {
