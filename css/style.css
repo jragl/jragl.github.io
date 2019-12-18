@@ -53,6 +53,18 @@ body {
   font-family: 'Roboto', 'Century Gothic', 'Futura', sans-serif;
 }
 
+button {
+  /* align-self: center; */
+  background-color: #157FFB;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #07598C;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -196,6 +208,7 @@ body {
 
 .discoveryAndResearch1 img {
   display: flex;
+  flex-direction: row;
   height: auto;
   max-width: 75%;
   /* max-height: 100%; */
@@ -203,6 +216,13 @@ body {
 
 .discoveryAndResearch3 img {
   max-height: 325px;
+}
+
+.display-across {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .featuredProject {
@@ -228,7 +248,8 @@ footer {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
+  line-height: 2rem;
 }
 
 h2 {
@@ -236,7 +257,6 @@ h2 {
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.25;
   margin-top: 1rem;
   text-align: center;
   text-decoration: none;
@@ -270,6 +290,7 @@ h6 {
   font-size: 2.5em;
   font-weight: bold;
   padding-top: 20px;
+  text-align: center;
 }
 .hamburger {
   color: white;
@@ -277,7 +298,7 @@ h6 {
   display: block;
   font-size:30px;
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
 }
 
@@ -321,16 +342,28 @@ img {
   max-width: 85%;
 }
 
+.inner-wrap {
+  margin: 20px;
+}
+
+.inner-wrap h5 {
+  color: #b3b3b3;
+}
+
+.inner-wrap h6 {
+  color: #b3b3b3;
+}
+
 .logo-and-type {
   color: white;
   height: 100%;
-  padding: 2.5%;
+  padding: 20px;
   text-align: center;
 }
 
 .logo-and-type img{
-  height: 50px;
-  width: 50px;
+  height: 15vw;
+  width: 15vw;
 }
 
 .navbar {
@@ -389,11 +422,10 @@ img {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: lighter;
-  line-height: 1.5;
+  line-height: 1.5rem;
   margin: 2rem 0;
-  max-width: 500px
   text-align: center;
 }
 
@@ -424,10 +456,14 @@ p {
   box-shadow: var(--main-box-shadow);
 }
 
-/* .projectDetails img {
-  max-height: 325px;
-  max-width: 90%;
-} */
+.slogan {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.space-around {
+  display: flex;
+}
 
 /* ----- Image Carousel Code ----- */
         .visualDesign {
@@ -541,9 +577,11 @@ p {
   }
 
   .aboutTheProject img {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     float: left;
-    /* padding: 50px; */
+    padding-right: 50px;
   }
 
   .aboutTheProject p {
@@ -606,7 +644,7 @@ p {
   }
 
   .discoveryAndResearch1 img {
-    max-width: 50%;
+    max-width: 30vw;
     /* max-height: 100%; */
   }
 
@@ -614,6 +652,9 @@ p {
     max-height: 500px;
   }
 
+  .display-across {
+    flex-wrap: nowrap;
+  }
   .fa {
     color: rgba(255,255,255,.5);
   }
@@ -706,10 +747,23 @@ p {
     width: 45%
   }
 
+  .inner-wrap {
+    margin: 0;
+  }
+
+  .inner-wrap h5 {
+    color: #b3b3b3;
+    text-align: left;
+  }
+
+  .inner-wrap h6 {
+    color: #b3b3b3;
+    text-align: left;
+  }
+
   .logo-and-type img{
-    height: 100px;
+    max-height: 125px;
     justify-content: center;
-    width: 100px;
   }
 
   .navbar {
@@ -744,11 +798,16 @@ p {
 
   p {
     font-size: 1.5rem;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .slogan {
-    font-size: 2rem;
+    display: inline-block;
+    font-size: 2.5rem;
+  }
+
+  .space-around {
+    max-width: 40vw;
   }
 
   .project {
@@ -761,8 +820,13 @@ p {
   }
 
   .projectDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-bottom: 50px;
-    min-width: 90%;
+    margin-top: 20px;
+    width: 90%;
     padding: 50px;
   }
 
