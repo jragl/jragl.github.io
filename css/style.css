@@ -44,12 +44,8 @@ a {
   color: #C0D4F5;
 }
 
-/* .backToTop img {
-  display: left;
-} */
-
 body {
-  /* display: flex; */
+  display: flex;
   font-family: 'Roboto', 'Century Gothic', 'Futura', sans-serif;
 }
 
@@ -215,7 +211,7 @@ button:hover {
 }
 
 .discoveryAndResearch3 img {
-  max-height: 325px;
+  max-height: 50vw;
 }
 
 .display-across {
@@ -224,6 +220,10 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/* .display-across img {
+  width: 350px;
+} */
 
 .featuredProject {
   border: var(--main-border-style);
@@ -255,7 +255,7 @@ h1 {
 h2 {
   color: #385FA3;
   display: block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-top: 1rem;
   text-align: center;
@@ -266,7 +266,7 @@ h3 {
   /* color: #9AB6EA; */
   color: #385FA3;
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2rem;
   margin: 10px 0;
   text-align: center;
@@ -321,9 +321,12 @@ html {
   color: black;
 }
 
-img {
+/* img {
   display: block;
-  margin: auto;
+} */
+
+.informationArchitecture1 {
+  height: 400px;
 }
 
 .informationArchitecture1 img {
@@ -331,10 +334,17 @@ img {
   width: 55%;
 }
 
+.informationArchitecture2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .informationArchitecture2 img {
-  border: solid 1px black;
-  height: auto;
-  width: 85%;
+  border: solid 2px black;
+  min-width: 550px;
+  width: 60%;
 }
 
 .informationArchitecture4 img {
@@ -425,7 +435,7 @@ p {
   font-size: 1.5rem;
   font-weight: lighter;
   line-height: 1.5rem;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   text-align: center;
 }
 
@@ -475,7 +485,7 @@ p {
 
         .visualVersions {
           align-items: center;
-          display: block;
+          display: flex;
           flex-direction: column;
           justify-content: center;
           width: 100%;
@@ -507,35 +517,6 @@ p {
           width: 45px;
         }
 
-/* -- Carousel dots -- */
-        .visualVersionsDots {
-          align-items: center;
-          background-color: white;
-          border: .25px solid #385FA3;
-          border-radius: 50%;
-          cursor: pointer;
-          display: inline-block;
-          height: 15px;
-          justify-content: center;
-          margin: 10px;
-          transition: background-color 0.6s ease;
-          width: 15px;
-        }
-
-        /* .visualVersionsDots:active {
-          background-color: red;
-        } */
-
-        .visualVersionsDots:hover {
-          background-color: #385FA3;
-        }
-
-        .visualVersionsDotsContainer {
-          display: flex;
-          justify-content: center;
-          height: 15px;
-          width: 100%;
-        }
 
 /*---------------------------------------------------------------- */
 /* ----------------------Desktop Screen Size---------------------- */
@@ -603,6 +584,43 @@ p {
     display: block;
   }
 
+  .coded-version h3 {
+    text-align: left;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .coded-version h5 {
+    text-align: left;
+  }
+
+  .coded-version p {
+    text-align: left;
+  }
+
+  .competing-products h3 {
+    padding-left: 20px;
+    text-align: left;
+  }
+  .competing-products p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 20vw;
+  }
+
+  .competitive-analysis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .competing-products {
+    display: flex;
+    flex-direction: row;
+  }
+
   .container {
     align-content: space-between;
     align-items: center;
@@ -644,17 +662,28 @@ p {
   }
 
   .discoveryAndResearch1 img {
-    max-width: 30vw;
+    max-width: 25vw;
     /* max-height: 100%; */
   }
 
+  .discoveryAndResearch3 h5 {
+    line-height: normal;
+    padding-top: 30px;
+    width: 75%;
+  }
+
   .discoveryAndResearch3 img {
-    max-height: 500px;
+    height: 30vw;
   }
 
   .display-across {
     flex-wrap: nowrap;
   }
+
+  /* .display-across img {
+    height: 30vw;
+  } */
+
   .fa {
     color: rgba(255,255,255,.5);
   }
@@ -723,10 +752,20 @@ p {
     line-height: 1.5;
   }
 
+  .informationArchitecture1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   .informationArchitecture1 img {
-    height: auto;
-    min-width: 250px;
-    width: 25%;
+    width: 40%;
+  }
+
+  .informationArchitecture2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .informationArchitecture2 img {
@@ -741,10 +780,21 @@ p {
     width: 60%
   }
 
+  .informationArchitecture4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .informationArchitecture4 h3 {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
   .informationArchitecture4 img {
     height: auto;
-    min-width: 400px;
-    width: 45%
+    width: 40%
   }
 
   .inner-wrap {
@@ -801,13 +851,31 @@ p {
     /* text-align: center; */
   }
 
+  .sketches {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .sketches h3 {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .sketches p {
+    padding-top: 15px;
+  }
+
   .slogan {
     display: inline-block;
     font-size: 2.5rem;
   }
 
   .space-around {
-    max-width: 40vw;
+    width: 40vw;
   }
 
   .project {
@@ -827,7 +895,7 @@ p {
     margin-bottom: 50px;
     margin-top: 20px;
     width: 90%;
-    padding: 50px;
+    padding: 30px;
   }
 
   ul {
@@ -836,21 +904,58 @@ p {
     width: 100%;
   }
 
+  .user-stories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .user-stories img {
+    height: auto;
+    max-height: 30vw;
+  }
+
+  .user-stories p {
+    max-width: 75%;
+    padding-left: 50px;
+    text-align: left;
+  }
+
+  .versions-carousel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .visualDesign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     white-space: nowrap;
     width: 100%;
   }
 
   .visualVersions {
     align-items: center;
-    display: block;
+    display: flex;
     height: auto;
     margin-bottom: 50px;
     width: 100%;
   }
 
+  .visualVersions h3 {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
   .visualVersions img {
     height: 500px;
+  }
+
+  .visualVersions p {
+    padding-top: 10px;
   }
 
 }
