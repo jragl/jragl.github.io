@@ -14,7 +14,7 @@ function showDivs(n) {
     x[i].style.display = "none";
     // visualVersionsDots[i].className = visualVersionsDots[i].className.replace(" active", "");
   }
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex-1].style.display = "flex";
   // visualVersionsDots[slideIndex-1].className += " active";
 }
 
