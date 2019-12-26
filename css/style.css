@@ -19,7 +19,11 @@ a {
 .aboutMe {
   border: var(--main-border-style);
   min-width: 80%;
-  padding: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .aboutMe:hover {
@@ -45,7 +49,7 @@ a {
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   font-family: 'Roboto', 'Century Gothic', 'Futura', sans-serif;
 }
 
@@ -54,7 +58,7 @@ button {
   background-color: #157FFB;
   border-radius: 5px;
   color: #ffffff;
-  width: 100px;
+  width: 150px;
 }
 
 button:hover {
@@ -64,13 +68,14 @@ button:hover {
 /*-------Contact Me Form-------*/
           /* Style inputs with type="text", select elements and textareas */
           input[type=text], select, textarea {
-            width: 100%; /* Full width */
-            padding: 20px; /* Some padding */
             border: 1px solid #ccc; /* Gray border */
             border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box;
             margin-top: 6px; /* Add a top margin */
             margin-bottom: 16px; /* Bottom margin */
+            padding: 20px; /* Some padding */
             resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+            width: 100%;
           }
 
           /* Style the submit button with a specific background color etc */
@@ -87,7 +92,7 @@ button:hover {
           input[type=submit]:hover {
             background-color: #07598C;
           }
-          
+
 /*-------------End - Contact Me Form ---------------*/
 
 .container {
@@ -364,7 +369,7 @@ html {
   /* height: 400px; */
   justify-content: center;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 50px;
   /* width: 100% */
 }
 
@@ -382,6 +387,11 @@ html {
 
 .informationArchitecture2 img {
   border: solid 2px black;
+  min-width: 550px;
+  width: 60%;
+}
+
+.informationArchitecture3 img {
   min-width: 550px;
   width: 60%;
 }
@@ -474,15 +484,14 @@ p {
     font-size: 1.5rem;
     font-weight: lighter;
     line-height: 2rem;
-    /* margin: 2rem 0; */
-    text-align: left;
+    text-align: center;
 }
 
 .project {
   border: var(--main-border-style);
   margin-bottom: 20px;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
 }
 
 .project:hover {
@@ -497,7 +506,7 @@ p {
   height: auto;
   justify-content: center;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 50px;
   max-width: 100%
 }
 
@@ -574,8 +583,8 @@ p {
 
   .aboutMe img {
     float: left;
+    height: 25%;
     padding-right: 50px;
-    width: 33%;
   }
 
   .aboutMe p {
@@ -584,7 +593,7 @@ p {
 
   .aboutMeText {
     display: inline-block;
-    width: 50%;
+    max-width: 50%;
   }
 
   .aboutTheProject {
@@ -665,8 +674,8 @@ p {
   }
 
   .container {
-    align-content: space-between;
-    align-items: center;
+    /* align-content: space-between;
+    align-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -863,7 +872,7 @@ p {
   }
 
   .info-architecture4-testing2 img {
-    padding: 20px;
+    padding: 50px;
     width: 30%;
   }
 
@@ -916,6 +925,7 @@ p {
 
   p {
     font-size: 1.5rem;    /* text-align: center; */
+    text-align: left;
   }
 
   .sketches {
