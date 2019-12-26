@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153111851-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-153111851-1');
+        </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Jeff Ragland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <header>
+        <ul class="navbar">
+          <li><a href="index.html" title="Page with all Case Studies available">UX Case Studies</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="contact-me.html" title="Will open a contact form">Contact Me</a></li>
+        </ul>
+
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <p>WHERE CAN I TAKE YOU?</p>
+                <!-- <ul class="overlay-content-subnav"><p>UX Case Studies</p>
+                    <li><a href="caseStudyBusyBus.html">BusyBus</a></li>
+                    <li><a href="caseStudyCumulus.html">Cumulus</a></li>
+                    <li><a href="caseStudyComingSoon.html">Coming Soon!</a></li>
+                </ul> -->
+                <a href="index.html">Case Studies</a>
+                <a href="aboutMe.html">About Me</a>
+                <a href="https://jeffragland.files.wordpress.com/2019/07/ragland_resume.pdf">Resume</a>
+                <a href="https://www.linkedin.com/in/jeff-ragland/">LinkedIn Profile</a>
+                <a href="https://www.facebook.com/profile.php?id=100008267680152">Facebook Page</a>
+                <a href="https://twitter.com/jragl">Twitter</a>
+                <a href="https://github.com/jragl">GitHub</a>
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </div>
+        <div class="hamburger" onclick="openNav()">&#9776;
+        </div>
+        <div class="logo-and-type">
+            <a href="index.html"><img src="images/jr-logo-white.svg" alt="Jeff Ragland's Logo"></a>
+            <h1>JEFF RAGLAND</h1>
+            <p class="slogan">UX designer & seasoned vet from Texas</p>
+        </div>
+    </header>
+
+    <div class="currentPage">
+        <div class="arrow-left">
+          <a href="javascript:history.back()"><i class="fa fa-chevron-left fa-inverse fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <h5>Contact Me</h5>
+    </div>
+
+  <body>
+    <div class="container">
+  <form action="action_page.php">
+
+    <h3><label for="name">Name</label></h3>
+    <input type="text" id="name" name="contactName" placeholder="Your name...">
+
+    <h3><label for="email">Email Address</label></h3>
+    <input type="text" id="email" name="emailAddress" placeholder="Your email address...">
+
+    <h3><label for="contactType">Contact Type</label></h3>
+    <select id="contactType" name="contactType">
+      <option value="resumeRequest">Resume Requested</option>
+      <option value="meetingRequest">Meeting Requested</option>
+      <option value="otherRequest">Other Request (specify below)</option>
+
+    </select>
+
+    <h3><label for="subject">Subject</label></h3>
+    <p><textarea id="subject" name="subject" placeholder="Provide any details necessary to help me respond to your request..." style="height:200px"></textarea></p>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+  </body>
+
+  <footer>
+    <ul class="icons" style="list-style-type:none;">
+            <li>
+                <a href="https://www.linkedin.com/in/jeff-ragland/" target="_blank">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+               </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100008267680152" target="_blank">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/jragl" target="_blank">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/jragl" target="_blank">
+                  <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+              <a href="contact-me.html">
+                  <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                </a>
+            </li>
+    </ul>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
