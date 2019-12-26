@@ -89,6 +89,7 @@ button:hover {
 }
 
 .currentPage h5 {
+  align-items: center;
   display: flex;
   justify-content: center;
   margin-left: -45px;
@@ -98,6 +99,7 @@ button:hover {
 .cumulusLink img {
   height: auto;
   min-width: 400px;
+  padding-bottom: 50px;
 }
 
 .cumulusLink img:hover {
@@ -106,9 +108,8 @@ button:hover {
   box-shadow: 0px 0px 5px 5px rgba(21,127,251, 1.0);
   margin: 20px;
   margin-bottom: 40px;
-  padding: 10px;
+  padding: 25px;
   transform: scale(1.5);
-  transition: all ease 0.2s;
 }
 
 /*---------- code for image inside of iPhone & Desktop Frames ----------*/
@@ -675,6 +676,10 @@ p {
     width: 75%;
   }
 
+  .cumulusProjectDetailsiPhone {
+    margin: 50px;
+  }
+
   .dcmetro img {
     padding-left: 50px;
   }
@@ -689,7 +694,6 @@ p {
   }
 
   .discoveryAndResearch3 h5 {
-    line-height: normal;
     padding-top: 30px;
     width: 75%;
   }
@@ -718,7 +722,6 @@ p {
 
   .featuredProject img {
     float: left;
-    margin-bottom: 20px;
     height: 50vw;
     min-height: 500px;
     padding: 50px;
@@ -726,6 +729,7 @@ p {
 
   .featuredProject h2  {
     display: inline-block;
+    margin-top: 0;
     text-align: center;
   }
 
@@ -826,7 +830,12 @@ p {
 
   .informationArchitecture4 img {
     height: auto;
-    width: 40%
+    width: 40%;
+  }
+
+  .info-architecture4-testing2 img {
+    padding: 20px;
+    width: 30%;
   }
 
   .inner-wrap {
@@ -834,12 +843,10 @@ p {
   }
 
   .inner-wrap h5 {
-    color: #b3b3b3;
     text-align: left;
   }
 
   .inner-wrap h6 {
-    color: #b3b3b3;
     text-align: left;
   }
 
