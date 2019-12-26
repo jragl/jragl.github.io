@@ -69,29 +69,29 @@
 
   <body>
     <div class="container">
-  <form action="action_page.php">
+        <form action="mailto:jragl@mac.com" method="post" enctype="text/plain" id="contactMeForm">
 
-    <h3><label for="name">Name</label></h3>
-    <input type="text" id="name" name="contactName" placeholder="Your name...">
+          <h3><label for="name">Name</label></h3>
+          <input type="text" id="name" name="Your Name" placeholder="Your name...">
 
-    <h3><label for="email">Email Address</label></h3>
-    <input type="text" id="email" name="emailAddress" placeholder="Your email address...">
+          <h3><label for="email">Email Address</label></h3>
+          <input type="text" id="email" name="Email Address" placeholder="Your email address...">
 
-    <h3><label for="contactType">Contact Type</label></h3>
-    <select id="contactType" name="contactType">
-      <option value="resumeRequest">Resume Requested</option>
-      <option value="meetingRequest">Meeting Requested</option>
-      <option value="otherRequest">Other Request (specify below)</option>
+          <h3><label for="contactType">Contact Type</label></h3>
+          <select id="contactType" name="Request Type: ">
+            <option value="resumeRequest">Resume Requested</option>
+            <option value="meetingRequest">Meeting Requested</option>
+            <option value="otherRequest">Other Request (specify below)</option>
 
-    </select>
+          </select>
 
-    <h3><label for="subject">Subject</label></h3>
-    <textarea id="subject" name="subject" placeholder="Provide any details necessary to help me respond to your request..." style="height:200px"></textarea>
+          <h3><label for="subject">Subject</label></h3>
+          <textarea id="subject" name="Subject" placeholder="Provide any details necessary to help me respond to your request..." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+          <input type="submit" form="contactMeForm" value="Send">
 
-  </form>
-</div>
+        </form>
+    </div>
   </body>
 
   <footer>
