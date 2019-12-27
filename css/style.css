@@ -9,6 +9,9 @@
 
 a {
   color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-decoration: none;
 }
 
@@ -24,6 +27,10 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.aboutMeText h2 {
+  text-align: center;
 }
 
 .aboutMe:hover {
@@ -95,7 +102,23 @@ button:hover {
 
 /*-------------End - Contact Me Form ---------------*/
 
+.citymapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.competing-products {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .container {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -236,6 +259,17 @@ button:hover {
           }
 
 /* ---------- end iphone and desktop frame coding ---------- */
+.dcmetro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.discoveryAndResearch1 {
+  align-items: center;
+}
 
 .discoveryAndResearch1 img {
   display: flex;
@@ -262,9 +296,12 @@ button:hover {
 
 .featuredProject {
   border: var(--main-border-style);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
   margin-bottom: 20px;
-  width: 100%;
+  width: 90%;
   padding: 20px;
 }
 
@@ -274,6 +311,8 @@ button:hover {
 
 .featuredProject img {
   /* margin-bottom: 20px; */
+  display: flex;
+  justify-content: center;
   height: 80vw;
   padding: 50px;
 }
@@ -362,7 +401,7 @@ html {
 } */
 
 .informationArchitecture1 {
-  /* align-items: center; */
+  align-items: center;
   border: var(--main-border-style);
   display: flex;
   flex-direction: column;
@@ -396,9 +435,24 @@ html {
   width: 60%;
 }
 
-.informationArchitecture4 img {
-  height: auto;
-  max-width: 85%;
+.info-architecture4-testing2 img {
+  height: 20vw;
+  /* max-width: 85%; */
+}
+
+.info-architecture4-upper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.info-architecture4-tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-right: 50px; */
 }
 
 .inner-wrap {
@@ -414,8 +468,12 @@ html {
 }
 
 .logo-and-type {
+  align-items: center;
   color: white;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  justify-content: center;
   padding: 20px;
   text-align: center;
 }
@@ -499,19 +557,23 @@ p {
 }
 
 .projectDetails {
-  align-items: center;
+  /* align-items: center; */
   border: var(--main-border-style);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   height: auto;
   justify-content: center;
   margin-bottom: 20px;
-  padding: 50px;
-  max-width: 100%
+  padding: 50px; */
+  max-width: 100%;
 }
 
 .projectDetails:hover {
   box-shadow: var(--main-box-shadow);
+}
+
+.prototypeTesting {
+  max-width: 25vw;
 }
 
 .slogan {
@@ -577,7 +639,7 @@ p {
     padding: 50px;
   }
 
-  .aboutMe h2 {
+  .aboutMeText h2 {
     text-align: left;
   }
 
@@ -632,6 +694,16 @@ p {
     display: block;
   }
 
+  .citymapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   .coded-version {
     padding-left: 50px;
   }
@@ -652,12 +724,12 @@ p {
   }
 
   .competing-products h3 {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     text-align: left;
   }
   .competing-products p {
-    padding-left: 20px;
-    padding-right: 50px;
+    /* padding-left: 20px;
+    padding-right: 50px; */
     text-align: left;
     width: 20vw;
   }
@@ -669,8 +741,10 @@ p {
   }
 
   .competing-products {
+    align-items: baseline;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .container {
@@ -681,7 +755,7 @@ p {
     justify-content: center;
     padding: 50px;
     margin-bottom: 0;
-    width: 90%;
+    width: 100%;
   }
 
   .container h2 {
@@ -718,8 +792,18 @@ p {
     margin: 50px;
   }
 
+  .dcmetro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+  }
+
   .dcmetro img {
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
 
   .discoveryAndResearch1 img {
@@ -728,16 +812,17 @@ p {
   }
 
   .discoveryAndResearch3 {
-    padding: 50px;
+    padding-top: 50px;
   }
 
-  .discoveryAndResearch3 h5 {
-    padding-top: 30px;
-    width: 75%;
+  .discoveryAndResearch3-advantage {
+    margin-bottom: 50px;
+    text-align: center;
+    /* padding-top: 50px; */
   }
 
   .discoveryAndResearch3 img {
-    height: 30vw;
+    max-height: 30vw;
   }
 
   .display-across {
@@ -848,6 +933,10 @@ p {
     width: 60%;
   }
 
+  .informationArchitecture3 {
+    display: flex;
+  }
+
   .informationArchitecture3 img {
     height: auto;
     min-width: 500px;
@@ -855,9 +944,11 @@ p {
   }
 
   .informationArchitecture4 {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 50px;
   }
 
   .informationArchitecture4 h3 {
@@ -867,13 +958,13 @@ p {
   }
 
   .informationArchitecture4 img {
-    height: auto;
-    width: 40%;
+    max-height: 30vw;
+    /* width: 25vw; */
   }
 
   .info-architecture4-testing2 img {
-    padding: 50px;
-    width: 30%;
+    padding-top: 50px;
+    /* width: 30%; */
   }
 
   .inner-wrap {
@@ -934,16 +1025,16 @@ p {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    padding-bottom: 50px;
   }
 
   .sketches h3 {
     font-weight: bolder;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 50px;
   }
 
   .sketches p {
-    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .slogan {
@@ -965,14 +1056,16 @@ p {
   }
 
   .projectDetails {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    border: var(--main-border-style);
     justify-content: center;
     margin-bottom: 50px;
+    padding: 50px;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 20px;
-    width: 90%;
-    padding: 30px;
+     */
   }
 
   ul {
