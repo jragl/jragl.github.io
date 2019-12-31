@@ -110,6 +110,25 @@ button:hover {
   padding-bottom: 20px;
 }
 
+.coded-prototype {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.coded-prototype img {
+  max-height: 400px;
+}
+
+.coded-version {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  justify-content: center;
+}
+
 .competing-products {
   align-items: center;
   display: flex;
@@ -265,10 +284,14 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .discoveryAndResearch1 {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .discoveryAndResearch1 img {
@@ -277,6 +300,10 @@ button:hover {
   height: auto;
   max-width: 75%;
   /* max-height: 100%; */
+}
+
+.discoveryAndResearch3-advantage {
+  padding: 20px;
 }
 
 .discoveryAndResearch3 img {
@@ -290,9 +317,9 @@ button:hover {
   justify-content: space-around;
 }
 
-/* .display-across img {
-  width: 350px;
-} */
+.display-across img {
+padding: 20px;
+}
 
 .featuredProject {
   border: var(--main-border-style);
@@ -422,6 +449,7 @@ html {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .informationArchitecture2 img {
@@ -430,14 +458,49 @@ html {
   width: 60%;
 }
 
+.informationArchitecture3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .informationArchitecture3 img {
   min-width: 550px;
   width: 60%;
+  padding: 20px;
 }
 
-.info-architecture4-testing2 img {
-  height: 20vw;
-  /* max-width: 85%; */
+.informationArchitecture4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.info-architecture4-callouts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-architecture4-tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 75%;
+}
+
+.info-architecture4-testing2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 50%;
 }
 
 .info-architecture4-upper {
@@ -445,14 +508,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 50px;
 }
 
-.info-architecture4-tasks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* padding-right: 50px; */
+.info-architecture4-upper img {
+  width: 75%;
 }
 
 .inner-wrap {
@@ -573,11 +632,20 @@ p {
 }
 
 .prototypeTesting {
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 100%;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.sketches {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slogan {
@@ -593,6 +661,7 @@ p {
         .visualDesign {
           align-items: center;
           display: flex;
+          justify-content: center;
           overflow-x: hidden;
           overflow-y: hidden;
         }
@@ -602,11 +671,13 @@ p {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          padding-bottom: 20px;
           width: 100%;
         }
 
         .visualVersions img {
           height: 400px;
+          padding-bottom: 20px;
         }
 
         .w3-button:hover {
@@ -636,6 +707,7 @@ p {
 /*---------------------------------------------------------------- */
 
 @media screen and (max-width: 375px) {
+
     img {
     width: 100%;
     }
@@ -647,7 +719,8 @@ p {
     }
 
     .prototypeTesting img {
-      max-width: 20vw;
+      max-width: 30vw;
+      width: 50%;
     }
     }
 
@@ -826,10 +899,6 @@ p {
   margin-bottom: 20px;
   }
 
-  .dcmetro img {
-    /* padding-left: 50px; */
-  }
-
   .discoveryAndResearch1 {
     display: flex;
     flex-direction: row;
@@ -837,7 +906,7 @@ p {
   }
 
   .discoveryAndResearch1 img {
-    max-width: 25vw;
+    max-width: 75%;
     /* max-height: 100%; */
   }
 
@@ -846,7 +915,7 @@ p {
   }
 
   .discoveryAndResearch3-advantage {
-    margin-bottom: 50px;
+    display: flex;
     text-align: center;
     /* padding-top: 50px; */
   }
@@ -987,14 +1056,20 @@ p {
     padding-top: 10px;
   }
 
-  .informationArchitecture4 img {
-    max-height: 30vw;
-    /* width: 25vw; */
+  .info-architecture4-tasks {
+    margin-right: 50px;
   }
 
   .info-architecture4-testing2 img {
     padding-top: 50px;
     /* width: 30%; */
+  }
+
+  .info-architecture4-upper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .inner-wrap {
@@ -1049,13 +1124,22 @@ p {
     text-align: left;
   }
 
+  .prototypeTesting {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+  }
+
   .sketches {
     align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    padding-bottom: 50px;
   }
 
   .sketches h3 {
@@ -1140,7 +1224,6 @@ p {
     align-items: center;
     display: flex;
     height: auto;
-    margin-bottom: 50px;
     width: 100%;
   }
 
