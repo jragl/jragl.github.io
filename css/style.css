@@ -573,7 +573,11 @@ p {
 }
 
 .prototypeTesting {
-  max-width: 25vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
 }
 
 .slogan {
@@ -626,6 +630,26 @@ p {
           margin-right: 25px;
           width: 45px;
         }
+
+/*---------------------------------------------------------------- */
+/* -------------mobile device Image size = 100% ------------------ */
+/*---------------------------------------------------------------- */
+
+@media screen and (max-width: 375px) {
+    img {
+    width: 100%;
+    }
+
+    .informationArchitecture1 img,
+    .informationArchitecture2 img,
+    .informationArchitecture3 img {
+      min-width: 100%;
+    }
+
+    .prototypeTesting img {
+      max-width: 20vw;
+    }
+    }
 
 
 /*---------------------------------------------------------------- */
@@ -804,6 +828,12 @@ p {
 
   .dcmetro img {
     /* padding-left: 50px; */
+  }
+
+  .discoveryAndResearch1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .discoveryAndResearch1 img {
@@ -1030,7 +1060,7 @@ p {
 
   .sketches h3 {
     font-weight: bolder;
-    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .sketches p {
