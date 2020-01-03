@@ -454,7 +454,7 @@ html {
 
 .informationArchitecture2 img {
   border: solid 2px black;
-  min-width: 550px;
+  min-width: 300px;
   width: 60%;
 }
 
@@ -466,7 +466,7 @@ html {
 }
 
 .informationArchitecture3 img {
-  min-width: 550px;
+  min-width: 300px;
   width: 60%;
   padding: 20px;
 }
@@ -624,7 +624,7 @@ p {
   justify-content: center;
   margin-bottom: 20px;
   padding: 50px; */
-  max-width: 100%;
+  width: 100%;
 }
 
 .projectDetails:hover {
@@ -1029,7 +1029,7 @@ p {
 
   .informationArchitecture2 img {
     border: solid 1px black;
-    min-width: 550px;
+    min-width: 400px;
     width: 60%;
   }
 
