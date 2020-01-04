@@ -39,4 +39,24 @@ function hover(element) {
 function unhover(element) {
   element.setAttribute('src', 'https://jeffragland.design/images/cumulus/cumulusLogoBlue.svg');
 }
-// ---------- Carousel navigation dots ---------- //
+// ---------- Contact Form ---------- //
+// document.addEventListener("DOMContentLoaded", function() {
+//  userName = document.getElementById('userName').value;
+//  email = document.getElementById('email').value;
+//  contactType = document.getElementById('contactType').value;
+//  subject = document.getElementById('subject').value;
+// })
+//
+// class User {
+//  constructor(userName, email, contactType, subject) {
+//  this.userName = userName;
+//  this.email = email;
+//  this.contactType = contactType;
+//  this.subject = subject;
+//  }
+// }
+//
+// function sendMessage() {
+//   var usr = new User(userName.value, email.value, contactType.value, subject.value);
+//   alert('Thank you for your message.')
+// }
