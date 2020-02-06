@@ -1,5 +1,5 @@
 var slideIndex = 1;
-// showDivs(slideIndex);
+showDivs(slideIndex);
 
 function goback() {
     history.go(-1);
