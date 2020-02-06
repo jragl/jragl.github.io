@@ -1,6 +1,10 @@
 var slideIndex = 1;
 showDivs(slideIndex);
 
+function goback() {
+    history.go(-1);
+}
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
