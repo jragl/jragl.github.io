@@ -2,8 +2,7 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function goback() {
-    history.go(-1);
-    return false;
+    window.history.back();
 }
 
 function plusDivs(n) {
