@@ -1,8 +1,9 @@
 var slideIndex = 1;
-showDivs(slideIndex);
+// showDivs(slideIndex);
 
 function goback() {
     history.go(-1);
+    return false;
 }
 
 function plusDivs(n) {
@@ -18,7 +19,7 @@ function showDivs(n) {
     x[i].style.display = "none";
     // visualVersionsDots[i].className = visualVersionsDots[i].className.replace(" active", "");
   }
-  x[slideIndex-1].style.display = "flex";
+  // x[slideIndex-1].style.display = "flex";
   // visualVersionsDots[slideIndex-1].className += " active";
 }
 
