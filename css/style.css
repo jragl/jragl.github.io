@@ -47,7 +47,7 @@ a {
 }
 
 #arrow-left {
-  background-color: #157ffb; */
+  background-color: #157ffb;
   color: #ffffff;
   width: 75px;
 }
@@ -91,7 +91,8 @@ button:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin: auto;
 }
@@ -109,9 +110,9 @@ button:hover {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #e4e4e4;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -119,6 +120,7 @@ button:hover {
 
 /* Position the "next button" to the right */
 .next {
+  /* color: black; */
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -133,8 +135,6 @@ button:hover {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
@@ -144,8 +144,6 @@ button:hover {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -574,7 +572,7 @@ html {
 .informationArchitecture2 img {
   border: solid 2px black;
   min-width: 300px;
-  width: 60%;
+  width: 90%;
 }
 
 .informationArchitecture3 {
@@ -586,7 +584,7 @@ html {
 
 .informationArchitecture3 img {
   min-width: 300px;
-  width: 60%;
+  width: 75%;
   padding: 20px;
 }
 
@@ -632,7 +630,7 @@ html {
 
 .info-architecture4-upper img {
   padding-bottom: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 .inner-wrap {
@@ -662,6 +660,17 @@ html {
 .logo-and-type img{
   height: 15vw;
   width: 15vw;
+}
+
+.mySlides {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.mySlides img {
+  align-items: center;
+  width: 50%;
 }
 
 .navbar {
@@ -821,7 +830,7 @@ p {
         }
 
         .w3-display-right {
-          align-items: right;
+          /* align-items: right; */
           font-size: 18px;
           height: 45px;
           justify-content: flex-end;
@@ -858,9 +867,32 @@ p {
     }
     }
 
-
 /*---------------------------------------------------------------- */
-/* ----------------------Desktop Screen Size---------------------- */
+/* ----------------------Tablet Screen Size----------------------- */
+/*---------------------------------------------------------------- */
+
+@media screen and (min-width:668px){
+  .discoveryAndResearch1 img {
+    max-width: 50%;
+  }
+
+  .informationArchitecture1 img {
+    min-width: 40%;
+  }
+
+  .informationArchitecture2 img {
+    border: solid 1px black;
+    width: 90%;
+  }
+
+  .informationArchitecture3 img {
+    width: 90%;
+    padding: 20px;
+  }
+
+}
+/*---------------------------------------------------------------- */
+/* ----------------------Tablet & Desktop Screen Size------------- */
 /*---------------------------------------------------------------- */
 
 @media screen and (min-width: 668px) {
@@ -1059,11 +1091,6 @@ p {
     flex-wrap: wrap;
   }
 
-  .discoveryAndResearch1 img {
-    max-width: 50%;
-    /* max-height: 100%; */
-  }
-
   .discoveryAndResearch3 {
     padding-top: 50px;
   }
@@ -1166,12 +1193,6 @@ p {
     width: 90%;
   }
 
-  .informationArchitecture1 img {
-    /* width: 40%; */
-    height: 30vw;
-    width: 20vw;
-  }
-
   .informationArchitecture1 p {
     width: 40vw;
   }
@@ -1182,20 +1203,8 @@ p {
     flex-wrap: nowrap;
   }
 
-  .informationArchitecture2 img {
-    border: solid 1px black;
-    min-width: 400px;
-    width: 60%;
-  }
-
   .informationArchitecture3 {
     display: flex;
-  }
-
-  .informationArchitecture3 img {
-    height: auto;
-    min-width: 500px;
-    width: 60%
   }
 
   .informationArchitecture4 {
@@ -1219,7 +1228,7 @@ p {
 
   .info-architecture4-testing2 img {
     padding-top: 50px;
-    /* width: 30%; */
+    width: 50%;
   }
 
   .info-architecture4-upper {
@@ -1251,12 +1260,9 @@ p {
   }
 
   .navbar {
-    background-color: none;
     display: block;
     float: right;
     padding: 5px;
-    /* min-width: 25%;
-    width: 300px; */
   }
 
   .navbar li {
@@ -1281,8 +1287,7 @@ p {
   }
 
   p {
-    font-size: 1.5rem;    /* text-align: center; */
-    text-align: left;
+    font-size: 1.5rem;
   }
 
   .prototypeTesting {
@@ -1345,6 +1350,10 @@ p {
     flex-wrap: wrap;
     margin-top: 20px;
      */
+  }
+
+  .three img {
+    height: 180px;
   }
 
   ul {
@@ -1418,4 +1427,31 @@ p {
     top: 15px;
     right: 35px;
   }
+}
+
+/*---------------------------------------------------------------- */
+/* ----------------------Desktop Screen Size----------------------- */
+/*---------------------------------------------------------------- */
+
+@media screen and (min-width:1024px){
+  .discoveryAndResearch1 img {
+    max-width: 33%;
+  }
+
+  .informationArchitecture1 img {
+    max-width: 40%;
+    /* height: 30vw; */
+  }
+
+  .informationArchitecture2 img {
+    border: solid 1px black;
+    width: 75%;
+  }
+
+  .informationArchitecture3 img {
+    min-width: 300px;
+    width: 75%;
+    padding: 20px;
+  }
+
 }

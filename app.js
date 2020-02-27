@@ -1,13 +1,3 @@
-// var slideIndex = 1;
-// showDivs(slideIndex);
-
-// function goback() {
-//     window.history.back();
-// }
-
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
 document.getElementById('arrow-left').addEventListener('click', () => {
   window.history.back();
 });
@@ -16,83 +6,32 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+function plusSlides (n) {
   showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+function currentSlide (n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides (n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName('mySlides');
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 };
+  if (n < 1) { slideIndex = slides.length };
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace('active', '');
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += " active";
 }
 
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("visualVersions");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length};
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//     // visualVersionsDots[i].className = visualVersionsDots[i].className.replace(" active", "");
-//   }
-//   // x[slideIndex-1].style.display = "flex";
-//   // visualVersionsDots[slideIndex-1].className += " active";
-// }
 
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
-$('.cumulusiPhoneFrame1').scroll(function() {
-    $('#scroll-text').fadeOut();
+$('.cumulusiPhoneFrame1').scroll(function () {
+  $('#scroll-text').fadeOut();
 });
-
-function hover(element) {
-  element.setAttribute('src', 'https://jeffragland.design/images/cumulus/cumulusLogoWhite.svg');
-}
-
-function unhover(element) {
-  element.setAttribute('src', 'https://jeffragland.design/images/cumulus/cumulusLogoBlue.svg');
-}
-// ---------- Contact Form ---------- //
-// document.addEventListener("DOMContentLoaded", function() {
-//  userName = document.getElementById('userName').value;
-//  email = document.getElementById('email').value;
-//  contactType = document.getElementById('contactType').value;
-//  subject = document.getElementById('subject').value;
-// })
-//
-// class User {
-//  constructor(userName, email, contactType, subject) {
-//  this.userName = userName;
-//  this.email = email;
-//  this.contactType = contactType;
-//  this.subject = subject;
-//  }
-// }
-//
-// function sendMessage() {
-//   var usr = new User(userName.value, email.value, contactType.value, subject.value);
-//   alert('Thank you for your message.')
-// }
