@@ -1,12 +1,3 @@
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.brandingImg{
-  width: 30%;
-}
-
 :root {
   --main-border-style: .2px solid #f0f0f0;
   --main-box-shadow: 0 2.5px 4px 0 #f5f5f5;
@@ -66,13 +57,15 @@ a {
 }
 
 .backToTop:hover {
-  /* background-color: #E5E5E5; */
   color: #C0D4F5;
 }
 
 body {
-  /* display: flex; */
   font-family: 'Roboto', 'Century Gothic', 'Futura', sans-serif;
+}
+
+.brandingImg{
+  width: 30%;
 }
 
 button {
@@ -87,128 +80,36 @@ button:hover {
   background-color: #07598C;
 }
 
-* {box-sizing:border-box}
+/*---------------- Contact Me Form ----------------*/
 
-/* Slideshow container */
-.slideshow-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: auto;
-}
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text], select, textarea {
+          border: 1px solid #ccc; /* Gray border */
+          border-radius: 4px; /* Rounded borders */
+          box-sizing: border-box;
+          margin-top: 6px; /* Add a top margin */
+          margin-bottom: 16px; /* Bottom margin */
+          padding: 20px; /* Some padding */
+          resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+          width: 100%;
+        }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+          background-color: #157FFB;
+          color: #ffffff;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #e4e4e4;
-  font-weight: bold;
-  font-size: 5rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+          background-color: #07598C;
+        }
 
-/* Position the "next button" to the right */
-.next {
-  /* color: black; */
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/*-------Contact Me Form-------*/
-          /* Style inputs with type="text", select elements and textareas */
-          input[type=text], select, textarea {
-            border: 1px solid #ccc; /* Gray border */
-            border-radius: 4px; /* Rounded borders */
-            box-sizing: border-box;
-            margin-top: 6px; /* Add a top margin */
-            margin-bottom: 16px; /* Bottom margin */
-            padding: 20px; /* Some padding */
-            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-            width: 100%;
-          }
-
-          /* Style the submit button with a specific background color etc */
-          input[type=submit] {
-            background-color: #157FFB;
-            color: #ffffff;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-          }
-
-          /* When moving the mouse over the submit button, add a darker green color */
-          input[type=submit]:hover {
-            background-color: #07598C;
-          }
-
-/*-------------End - Contact Me Form ---------------*/
+/*---------------- End - Contact Me Form ----------------*/
 
 .citymapper {
   align-items: center;
@@ -257,18 +158,13 @@ button:hover {
 .currentPage {
   background-color: #C0D4F5;
   display: flex;
-  /* height: 45px; */
-  /* justify-content: center; */
-  /* margin-bottom: 20px;
-  width: 100%; */
 }
 
 .currentPage .arrow-left {
-  align-self: flex-start; /*added this property*/
+  align-self: flex-start;
   height: 45px;
-  margin: auto; /*changed this property*/
+  margin: auto;
   padding: 10px 0 15px 15px;
-  /* position: fixed; */
   width: 45px;
 }
 
@@ -280,23 +176,8 @@ button:hover {
   width: 100%;
 }
 
-.cumulusLink img {
-  height: auto;
-  min-width: 400px;
-  padding-bottom: 50px;
-}
 
-.cumulusLink img:hover {
-  background-color: #043959;
-  border-radius: 30px;
-  box-shadow: 0px 0px 5px 5px rgba(21,127,251, 1.0);
-  margin: 20px;
-  margin-bottom: 40px;
-  padding: 25px;
-  transform: scale(1.5);
-}
-
-/*---------- code for image inside of iPhone & Desktop Frames ----------*/
+/*---------- Cumulus & Images inside of iPhone & Desktop Frames ----------*/
 
           .cumulusDesktopDashboard {
             /* border-radius: 5px 0 0 5px; */
@@ -371,6 +252,22 @@ button:hover {
             z-index: -1;
           }
 
+          .cumulusLink img {
+            height: auto;
+            min-width: 400px;
+            padding-bottom: 50px;
+          }
+
+          .cumulusLink img:hover {
+            background-color: #043959;
+            border-radius: 30px;
+            box-shadow: 0px 0px 5px 5px rgba(21,127,251, 1.0);
+            margin: 20px;
+            margin-bottom: 40px;
+            padding: 25px;
+            transform: scale(1.5);
+          }
+
           .cumulusProjectDetailsDesktop {
             transform: none;
             transition: all ease 0.4s;
@@ -382,10 +279,10 @@ button:hover {
 
           .mockup ::-webkit-scrollbar {
           	display: none;
-            /* width: 0; */
           }
 
 /* ---------- end iphone and desktop frame coding ---------- */
+
 .dcmetro {
   align-items: center;
   display: flex;
@@ -434,10 +331,6 @@ button:hover {
   justify-content: space-around;
 }
 
-.display-across img {
-/* padding: 20px; */
-}
-
 .featuredProject {
   border: var(--main-border-style);
   display: flex;
@@ -454,11 +347,15 @@ button:hover {
 }
 
 .featuredProject img {
-  /* margin-bottom: 20px; */
   display: flex;
   justify-content: center;
   height: 80vw;
   padding: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -540,20 +437,14 @@ html {
   color: black;
 }
 
-/* img {
-  display: block;
-} */
-
 .informationArchitecture1 {
   align-items: center;
   border: var(--main-border-style);
   display: flex;
   flex-direction: column;
-  /* height: 400px; */
   justify-content: center;
   margin-bottom: 20px;
   padding: 50px;
-  /* width: 100% */
 }
 
 .informationArchitecture1 img {
@@ -645,13 +536,11 @@ html {
   color: #b3b3b3;
 }
 
-
 .logo-and-type {
   align-items: center;
   color: white;
   display: flex;
   flex-direction: column;
-  /* height: 100%; */
   justify-content: center;
   padding: 20px;
   text-align: center;
@@ -664,13 +553,13 @@ html {
 
 .mySlides {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
 .mySlides img {
   align-items: center;
-  width: 50%;
+  min-width: 250px;
+  width: 33%;
 }
 
 .navbar {
@@ -711,7 +600,6 @@ html {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus, .overlay a:active {
-  /* color: #f1f1f1; */
   background-color: #9AB6EA;
 }
 
@@ -747,14 +635,7 @@ p {
 }
 
 .projectDetails {
-  /* align-items: center; */
   border: var(--main-border-style);
-  /* display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  margin-bottom: 20px;
-  padding: 50px; */
   width: 100%;
 }
 
@@ -792,50 +673,100 @@ p {
   /* display: flex; */
 }
 
-/* ----- Image Carousel Code ----- */
-        .visualDesign {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          width: 100%;
+/*---------- BusyBus Image Carousel Code ----------*/
+
+        .active, .dot:hover {
+          background-color: #717171;
         }
 
-        .visualVersions {
-          align-items: center;
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: #e4e4e4;
+          font-weight: bold;
+          font-size: 5rem;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        .slideshow-container {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding-bottom: 20px;
+          margin: auto;
+          position: relative;
           width: 100%;
         }
 
-        .visualVersions img {
-          height: 400px;
-          padding-bottom: 20px;
+        /* Caption text */
+        .text {
+          align-items: center;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          font-size: 15px;
+          padding: 8px 12px;
+          width: 100%;
+          text-align: center;
         }
 
-        .w3-button:hover {
-          background-color: #9AB6EA;
-          color: #385FA3;
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
         }
 
-        .w3-display-left {
-          font-size: 18px;
-          height: 45px;
-          justify-content: flex-start;
-          margin-left: 25px;
-          width:45px;
-        }
-
-        .w3-display-right {
-          /* align-items: right; */
-          font-size: 18px;
-          height: 45px;
-          justify-content: flex-end;
-          margin-right: 25px;
-          width: 45px;
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
         }
 
 /*---------------------------------------------------------------- */
@@ -844,58 +775,62 @@ p {
 
 @media screen and (max-width: 500px) {
 
-    img {
-    width: 100%;
-    }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
 
-    .informationArchitecture1 img,
-    .informationArchitecture2 img,
-    .informationArchitecture3 img {
-      min-width: 100%;
-    }
+      .brandingImg{
+        width: 90%;
+      }
 
-    .prototypeTesting img {
-      max-width: 30vw;
-      width: 50%;
-    }
-    .flex-container {
-      display: flex;
-      flex-direction: column;
-    }
-    .brandingImg{
-      width: 90%;
-    }
-    }
+      img {
+      width: 100%;
+      }
+
+      .informationArchitecture1 img,
+      .informationArchitecture2 img,
+      .informationArchitecture3 img {
+        min-width: 100%;
+      }
+
+      .prototypeTesting img {
+        max-width: 30vw;
+        width: 50%;
+      }
+}
 
 /*---------------------------------------------------------------- */
-/* ----------------------Tablet Screen Size----------------------- */
+/* ----------------------Tablet Screen Size (668px)----------------------- */
 /*---------------------------------------------------------------- */
 
 @media screen and (min-width:668px){
-  .discoveryAndResearch1 img {
-    max-width: 50%;
-  }
 
-  .informationArchitecture1 img {
-    min-width: 40%;
-  }
+        .discoveryAndResearch1 img {
+          max-width: 50%;
+        }
 
-  .informationArchitecture2 img {
-    border: solid 1px black;
-    width: 90%;
-  }
+        .informationArchitecture1 img {
+          min-width: 40%;
+        }
 
-  .informationArchitecture3 img {
-    width: 90%;
-    padding: 20px;
-  }
+        .informationArchitecture2 img {
+          border: solid 1px black;
+          width: 90%;
+        }
 
+        .informationArchitecture3 img {
+          width: 90%;
+          padding: 20px;
+        }
 }
+
 /*---------------------------------------------------------------- */
 /* ----------------------Tablet & Desktop Screen Size------------- */
 /*---------------------------------------------------------------- */
 
 @media screen and (min-width: 668px) {
+
   .aboutMe {
     margin-bottom: 50px;
     min-width: 90%;
@@ -1007,12 +942,9 @@ p {
   }
 
   .competing-products h3 {
-    /* padding-left: 20px; */
     text-align: left;
   }
   .competing-products p {
-    /* padding-left: 20px;
-    padding-right: 50px; */
     text-align: left;
     width: 20vw;
   }
@@ -1031,18 +963,12 @@ p {
   }
 
   .container {
-    /* align-content: space-between;
-    align-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
     margin-bottom: 0;
     width: 100%;
-  }
-
-  .container h2 {
-    /* text-align: center; */
   }
 
   #cumulusDesktopFrame1 {
@@ -1065,7 +991,6 @@ p {
     width: 30vw;
   }
 
-
   .cumulusLink img {
     min-width: 450px;
     width: 75%;
@@ -1076,13 +1001,13 @@ p {
   }
 
   .dcmetro {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  max-width: 100%;
-  margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .discoveryAndResearch1 {
@@ -1098,7 +1023,6 @@ p {
   .discoveryAndResearch3-advantage {
     display: flex;
     text-align: center;
-    /* padding-top: 50px; */
   }
 
   .discoveryAndResearch3 img {
@@ -1110,10 +1034,6 @@ p {
     display: flex;
     flex-wrap: nowrap;
   }
-
-  /* .display-across img {
-    height: 30vw;
-  } */
 
   .fa {
     color: rgba(255,255,255,.5);
@@ -1166,7 +1086,6 @@ p {
     background-image: url(../images/heroDesktop.png);
     background-position: left;
     background-repeat: no-repeat;
-    /* background-size: cover; */
     display: block;
     height: 300px;
     justify-content: center;
@@ -1266,7 +1185,6 @@ p {
   }
 
   .navbar li {
-    /* border-left: 1px solid white; */
     float: right;
   }
 
@@ -1345,11 +1263,6 @@ p {
     margin-bottom: 50px;
     padding: 50px;
     width: 100%;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-     */
   }
 
   .three img {
@@ -1379,45 +1292,7 @@ p {
     text-align: left;
   }
 
-  .versions-carousel {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .visualDesign {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    white-space: nowrap;
-    width: 100%;
-  }
-
-  .visualVersions {
-    align-items: center;
-    display: flex;
-    height: auto;
-    width: 100%;
-  }
-
-  .visualVersions h3 {
-    font-weight: bolder;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-
-  .visualVersions img {
-    height: 500px;
-  }
-
-  .visualVersions p {
-    padding-top: 10px;
-  }
-
 }
-
-
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
@@ -1439,8 +1314,7 @@ p {
   }
 
   .informationArchitecture1 img {
-    max-width: 40%;
-    /* height: 30vw; */
+    max-width: 33%;
   }
 
   .informationArchitecture2 img {
@@ -1452,6 +1326,10 @@ p {
     min-width: 300px;
     width: 75%;
     padding: 20px;
+  }
+
+  .myslides img {
+    width: 33%;
   }
 
 }
